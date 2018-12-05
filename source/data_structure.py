@@ -1,32 +1,57 @@
 import csv
 
+folder = '/home/vini/PycharmProjects/ReportCard/resources/students.csv'
 
-def marks_csv():
-    mlist = []
-    folder = '/home/vini/PycharmProjects/ReportCard/resources/marks.csv'
-    with open(folder, 'r') as file:
-        read_csv = csv.reader(file, delimiter=',')
-        next(read_csv,None)
-        for row in read_csv:
-            mlist.append(row)
-
-    return mlist
+folder2 = '/home/vini/PycharmProjects/ReportCard/resources/marks.csv'
 
 
-def marks(marks_list):
+class StudentDetails:
+    def __init__(self):
+        self.students = {}
 
-    # separating data according to test_id and course_id
-    bio, hist, math = [], [], []
-    for data in marks_list:
-        if data[1] == '1':
-           bio.append(data)
-        elif data[1] == '2':
-            hist.append(data)
-        else:
-            math.append(data)
+    def student_id(self):
 
-    return bio, hist, math
+        with open(folder, 'r') as file:
+            read_csv = csv.reader(file, delimiter=',')
+            next(read_csv, None)
+            for data in read_csv:
+                self.students[data[0]] = data[1]
 
+        return self.students
+
+    def 
+
+test = StudentDetails()
+print(test.studentId())
+
+
+'''
+    def marks_csv():
+        mlist = []
+        
+        with open(folder, 'r') as file:
+            read_csv = csv.reader(file, delimiter=',')
+            next(read_csv,None)
+            for row in read_csv:
+                mlist.append(row)
+    
+        return mlist
+    
+    
+    def marks(marks_list):
+    
+        # separating data according to test_id and course_id
+        bio, hist, math = [], [], []
+        for data in marks_list:
+            if data[1] == '1':
+               bio.append(data)
+            elif data[1] == '2':
+                hist.append(data)
+            else:
+                math.append(data)
+    
+        return bio, hist, math
+    
 
 if __name__ == '__main__':
     marks_list = marks_csv()
@@ -41,7 +66,7 @@ if __name__ == '__main__':
     for data in result[2]:
         print(data)
 
-
+'''
 
 
 
