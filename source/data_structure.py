@@ -90,16 +90,19 @@ with open(folder2, 'r') as file:
 
 for name_id in student_id:
     marks = {}
-
+    total_percentage = 0
+    length = 0
     # collecting individual student marks
     for index in marks_data:
         if name_id == index[1]:
             marks[index[0]] = index[2]
 
-    print('--------')
+    print('STUDENT', name_id)
+    print('^^^^^^^')
     # print(marks)
     # collecting individual student course marks
     for course_name in course_id:
+
         course_weights = {}
         for course_test_id in tests_data:
             if course_name == course_test_id[1]:
@@ -107,9 +110,9 @@ for name_id in student_id:
         # print(course_weights)
 
         # single course average calculation
-        total_percentage = 0
-        count = 0
+
         course_total = 0
+
         for key, val in marks.items():
 
             for i, j in course_weights.items():
@@ -117,10 +120,16 @@ for name_id in student_id:
                 if key == i:
                     total = int(val)*(int(j)*0.01)
                     course_total += total
-                    count += 1
+
+        total_percentage += course_total
+
+        if course_total != 0:
+            length += 1
+
         print(course_total)
+    total_percentage = total_percentage/ float(length)
 
-
+    print(total_percentage)
 
 
 
