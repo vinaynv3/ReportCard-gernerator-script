@@ -8,6 +8,7 @@ folder2 = '/home/vini/PycharmProjects/ReportCard/resources/marks.csv'
 class StudentDetails:
     def __init__(self):
         self.students = {}
+        sel.
 
     def student_id(self):
 
@@ -19,7 +20,8 @@ class StudentDetails:
 
         return self.students
 
-    def 
+    def test_id(self):
+
 
 test = StudentDetails()
 print(test.studentId())

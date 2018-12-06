@@ -1,11 +1,21 @@
 
 import csv
 
+# ______________________________________________________________________________
+
 # Course CSV file directory folder
 folder = '/home/vini/PycharmProjects/ReportCard/resources/courses.csv'
 
-# Tests CSV file directory folder
+# test CSV file directory folder
 folder2 = '/home/vini/PycharmProjects/ReportCard/resources/tests.csv'
+
+# students CSV file directory folder
+folder3 = '/home/vini/PycharmProjects/ReportCard/resources/students.csv'
+
+# marks CSV file directory folder
+folder4 = '/home/vini/PycharmProjects/ReportCard/resources/marks.csv'
+
+# ________________________________________________________________________________
 
 
 # Report card class
@@ -15,6 +25,7 @@ class ReportCard:
         self.test_details = {}
         self.course_id = None
         self.course_name = None
+        self.students = {}
 
     # function return course_name and course_id
     def courses(self):
@@ -36,32 +47,59 @@ class ReportCard:
 
         return self.course_details
 
+    # function returns student_name and student_id
+    def student_id(self):
+
+        # statement reads csv course data
+        with open(folder3, 'r') as file:
+            read_csv = csv.reader(file, delimiter=',')
+
+            # skipping header in csv file
+            next(read_csv, None)
+
+            # loop assigns key students_id and value students_name to students dictionary
+            for data in read_csv:
+                self.students[data[0]] = data[1]
+
+        return self.students
+
+    # function returns marks and test_id
+    def marks(self):
+
+        # statement reads csv course data
+        with open(folder4, 'r') as file:
+            read_csv = csv.reader(file, delimiter=',')
+
+            # skipping header in csv file
+            next(read_csv, None)
+
+            for d in read_csv:
+                print(d)
+
     # function returns course id and course weight
     def course_test_id_and_weight(self):
 
-            with open(folder2, 'r') as file:
-                read_csv = csv.reader(file, delimiter=',')
-                next(read_csv, None)
+        bio, hist, math = {}, {}, {}
 
+        with open(folder2, 'r') as file:
+            read_csv = csv.reader(file, delimiter=',')
+            next(read_csv, None)
+
+            for id in self.course_id:
+                print(id)
                 for val in read_csv:
-                    print(val)
+                    if id == val[1]:
+                        bio[val[0]] = val[2]
 
-                    if self.course_id[0] == val[1]:
-                        self.course_name[int(val[0])] = val[2]
-                        print(self.course_name[0])
+            for id in self.course_id:
+                print(id)
+                if id == '2':
+                    hist[val[0]] = val[2]
 
-                '''
-                    elif self.course_id[1] == id[1]:
-                        history[id[0]] = id[2]
-
-                    else:
-                        maths[id[0]] = id[2]
-        
-                '''
-        return self.course_name[0]
+        print(bio, hist)
 
 
 test = ReportCard()
 print(test.courses())
 print(test.course_test_id_and_weight())
-
+# print(test.student_id())
