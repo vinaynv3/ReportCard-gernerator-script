@@ -96,15 +96,37 @@ for name_id in student_id:
         if name_id == index[1]:
             marks[index[0]] = index[2]
 
+    print('--------')
+    # print(marks)
     # collecting individual student course marks
-
     for course_name in course_id:
         course_weights = {}
         for course_test_id in tests_data:
             if course_name == course_test_id[1]:
                 course_weights[course_test_id[0]] = course_test_id[2]
-
         # print(course_weights)
 
+        # single course average calculation
+        total_percentage = 0
+        count = 0
+        course_total = 0
+        for key, val in marks.items():
 
-    print(marks)
+            for i, j in course_weights.items():
+
+                if key == i:
+                    total = int(val)*(int(j)*0.01)
+                    course_total += total
+                    count += 1
+        print(course_total)
+
+
+
+
+
+
+
+
+
+
+
