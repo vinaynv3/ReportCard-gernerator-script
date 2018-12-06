@@ -1,74 +1,110 @@
 import csv
 
-folder = '/home/vini/PycharmProjects/ReportCard/resources/students.csv'
+# ______________________________________________________________________________
 
-folder2 = '/home/vini/PycharmProjects/ReportCard/resources/marks.csv'
+# Course CSV file directory folder
+folder = '/home/vini/PycharmProjects/ReportCard/resources/courses.csv'
 
+# test CSV file directory folder
+folder2 = '/home/vini/PycharmProjects/ReportCard/resources/tests.csv'
 
-class StudentDetails:
-    def __init__(self):
-        self.students = {}
-        sel.
+# students CSV file directory folder
+folder3 = '/home/vini/PycharmProjects/ReportCard/resources/students.csv'
 
-    def student_id(self):
+# marks CSV file directory folder
+folder4 = '/home/vini/PycharmProjects/ReportCard/resources/marks.csv'
 
-        with open(folder, 'r') as file:
-            read_csv = csv.reader(file, delimiter=',')
-            next(read_csv, None)
-            for data in read_csv:
-                self.students[data[0]] = data[1]
-
-        return self.students
-
-    def test_id(self):
+# ________________________________________________________________________________
 
 
-test = StudentDetails()
-print(test.studentId())
+students = {}
 
+courses = {}
+
+teachers = {}
+
+# statement reads csv students data
+with open(folder3, 'r') as file:
+    read_csv = csv.reader(file, delimiter=',')
+
+    # skipping header in csv file
+    next(read_csv, None)
+
+    # loop assigns key course_id and value course_name to course_details dictionary
+    for data in read_csv:
+        students[data[0]] = data[1]
+
+# statement reads csv course data
+with open(folder, 'r') as file:
+    read_csv = csv.reader(file, delimiter=',')
+
+    # skipping header in csv file
+    next(read_csv, None)
+
+    # loop assigns key course_id and value course_name to course_details dictionary
+    for data in read_csv:
+        courses[data[0]] = data[1]
+        teachers[data[0]] = data[2]
+
+# Debugging
+# print(students, courses, teachers)
 
 '''
-    def marks_csv():
-        mlist = []
-        
-        with open(folder, 'r') as file:
-            read_csv = csv.reader(file, delimiter=',')
-            next(read_csv,None)
-            for row in read_csv:
-                mlist.append(row)
-    
-        return mlist
-    
-    
-    def marks(marks_list):
-    
-        # separating data according to test_id and course_id
-        bio, hist, math = [], [], []
-        for data in marks_list:
-            if data[1] == '1':
-               bio.append(data)
-            elif data[1] == '2':
-                hist.append(data)
-            else:
-                math.append(data)
-    
-        return bio, hist, math
-    
-
-if __name__ == '__main__':
-    marks_list = marks_csv()
-    result = marks(marks_list)
-    print('\tStudent A\n\t--------')
-    for data in result[0]:
-        print(data)
-    print('\n\tStudent B\n\t--------')
-    for data in result[1]:
-        print(data)
-    print('\n\tStudent C\n\t--------')
-    for data in result[2]:
-        print(data)
+Script: loops will iterate data to handle scalability issues in csv files
+Approach: Dynamic
+TODO: implement average and percentile calculation 
 
 '''
 
+student_id = list(students.keys())
+course_id = list(courses.keys())
+marks_data = []
+tests_data = []
+
+# statement reads csv marks data
+with open(folder4, 'r') as file:
+    read_csv_marks = csv.reader(file, delimiter=',')
+
+    # skipping header in csv file
+    next(read_csv_marks, None)
+
+    for data in read_csv_marks:
+        marks_data.append(data)
+
+# Debugging
+
+# statement reads csv tests data
+with open(folder2, 'r') as file:
+    read_csv_tests = csv.reader(file, delimiter=',')
+
+    # skipping header in csv file
+    next(read_csv_tests, None)
+
+    # loop assigns key course_id and value course_name to course_details dictionary
+    for data in read_csv_tests:
+        tests_data.append(data)
+
+# for i in tests_data:
+#    print(i)
 
 
+for name_id in student_id:
+    marks = {}
+
+    # collecting individual student marks
+    for index in marks_data:
+        if name_id == index[1]:
+            marks[index[0]] = index[2]
+
+    # collecting individual student course marks
+
+    for course_name in course_id:
+        course_weights = {}
+        for course_test_id in tests_data:
+            if course_name == course_test_id[1]:
+                course_weights[course_test_id[0]] = course_test_id[2]
+
+        # print(course_weights)
+
+
+    print(marks)

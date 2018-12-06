@@ -101,5 +101,5 @@ class ReportCard:
 
 test = ReportCard()
 print(test.courses())
-print(test.course_test_id_and_weight())
-# print(test.student_id())
+# print(test.course_test_id_and_weight())
+print(test.student_id())
