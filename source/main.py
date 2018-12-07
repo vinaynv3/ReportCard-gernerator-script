@@ -1,7 +1,6 @@
 import csv
 import os
 
-
 path = os.path.join('/home', 'vini', 'PycharmProjects', 'ReportCard', 'resources/')
 csv_files = ['courses.csv', 'tests.csv', 'marks.csv', 'students.csv']
 
@@ -36,8 +35,6 @@ for file in csv_files:
                 tests_data.append(data)
 
 
-course_id = list(courses.keys())
-
 # logic script starts
 # loop calculate each student grades and their average dynamically
 for name_id, name in students.items():
@@ -55,6 +52,7 @@ for name_id, name in students.items():
     print('STUDENT', name_id, 'Name: ', name)
 
     # collecting individual student course marks
+    course_id = list(courses.keys())
     for course_name in course_id:
 
         course_weights = {}
@@ -62,9 +60,8 @@ for name_id, name in students.items():
             if course_name == course_test_id[1]:
                 course_weights[course_test_id[0]] = course_test_id[2]
 
-        # course average calculation
         course_total = 0
-
+        # course average calculation
         for test_id, mark in marks.items():
             for test_no, grade_weight in course_weights.items():
 
@@ -82,12 +79,16 @@ for name_id, name in students.items():
         if course_total != 0:
             total_courses += 1
 
-    # finally calculating student total percentage of marks
+    # calculating student total percentage of marks
     total_percentage = total_percentage / float(total_courses)
+
+    '''
+    # Debugging 
     print(round(total_percentage, 2))
     print(final_grade, '\n')
     print("-----------------------------------------------------------------------")
-
+    '''
+    # statements writes students report card final grades into test document
     text_file = open('report_card.txt', 'a')
     text_file.write('\n')
     text_file.write(("Student_Id:%s" % name_id) + " Name:%s" % name)
@@ -95,8 +96,10 @@ for name_id, name in students.items():
     text_file.write("Total Average:%s" % round(total_percentage, 2) + '%')
     text_file.write('\n\n')
 
+    # statement block writes course grades and tests taken course names into text document
     grade = 0
     for c_id, c_teacher in course_teachers.items():
+        # condition evaluates null values
         if final_grade[grade] != 0:
             text_file.write(("\t\t course:%s" % c_id) + "\tTeacher:%s" % c_teacher)
             text_file.write('\n')
@@ -106,5 +109,5 @@ for name_id, name in students.items():
 
     text_file.write('---------------------------------------------------------------')
 
-
+# THE END OF PYTHON SCRIPT
 
