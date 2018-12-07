@@ -70,11 +70,15 @@ with open(folder2, 'r') as file:
         tests_data.append(data)
 # __________________________________________________________________________________________________________
 
+
+
+
+
+'''
 # breaking dictionary values into list
 student_id = list(students.keys())
 course_id = list(courses.keys())
 
-print(course_teachers)
 # logic script starts
 # loop calculate each student grades and their average dynamically
 for name_id, name in students.items():
@@ -127,24 +131,24 @@ for name_id, name in students.items():
 
     text_file = open('report_card.txt', 'a')
     text_file.write('\n')
-    text_file.write(("STUDENT:%s" % name_id) + " Name:%s" % name)
+    text_file.write(("Student_Id:%s" % name_id) + " Name:%s" % name)
     text_file.write('\n')
-    text_file.write("Total Average:%s" % round(total_percentage, 2))
-    text_file.write('\n\nc')
+    text_file.write("Total Average:%s" % round(total_percentage, 2) + '%')
+    text_file.write('\n\n')
 
     grade = 0
     for c_id, c_teacher in course_teachers.items():
         if final_grade[grade] != 0:
             text_file.write(("\t\t course:%s" % c_id) + "\tTeacher:%s" % c_teacher)
             text_file.write('\n')
-            text_file.write('\t\t Final Grade:\t%s' % final_grade[grade])
+            text_file.write('\t\t Final Grade:\t%s' % final_grade[grade] + '%')
             text_file.write('\n\n')
         grade += 1
 
     text_file.write('---------------------------------------------------------------')
 
 
-
+'''
 
 
 
