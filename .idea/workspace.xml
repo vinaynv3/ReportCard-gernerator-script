@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e82e9812-3a12-44ee-acab-1f63f33c80d4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/report_card.txt" beforeDir="false" afterPath="$PROJECT_DIR$/source/report_card.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/report_card_script.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/report_card_script.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code_test/Report.py" beforeDir="false" afterPath="$PROJECT_DIR$/source_code_test/Report.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
-              <caret line="137" column="8" lean-forward="true" selection-start-line="137" selection-start-column="8" selection-end-line="137" selection-end-column="8" />
+            <state relative-caret-position="166">
+              <caret line="122" column="26" lean-forward="true" selection-end-line="147" />
               <folding>
                 <element signature="e#10#20#0" expanded="true" />
               </folding>
@@ -30,10 +29,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/report_card_script.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="198">
+              <caret line="11" column="12" lean-forward="true" selection-end-line="146" />
               <folding>
-                <element signature="e#0#10#0" expanded="true" />
+                <element signature="e#10#20#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source_code_test/Report.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+              <folding>
+                <element signature="e#10#20#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -65,14 +76,14 @@
         <option value="$PROJECT_DIR$/source/read_csv_files.py" />
         <option value="$PROJECT_DIR$/source/data_structure.py" />
         <option value="$PROJECT_DIR$/source/Report.py" />
-        <option value="$PROJECT_DIR$/source_code_test/Report.py" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/source_code_test/tests.csv" />
         <option value="$PROJECT_DIR$/source_code_test/marks.csv" />
         <option value="$PROJECT_DIR$/source_code_test/report_card.txt" />
         <option value="$PROJECT_DIR$/source/report_card.txt" />
-        <option value="$PROJECT_DIR$/source/report_card_script.py" />
         <option value="$PROJECT_DIR$/source/main.py" />
+        <option value="$PROJECT_DIR$/source/report_card_script.py" />
+        <option value="$PROJECT_DIR$/source_code_test/Report.py" />
       </list>
     </option>
   </component>
@@ -129,7 +140,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main (1)">
+  <component name="RunManager" selected="Python.Report">
     <configuration name="Report (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ReportCard" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -266,11 +277,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main (1)" />
+        <item itemvalue="Python.Report" />
         <item itemvalue="Python.report_card_script" />
+        <item itemvalue="Python.main (1)" />
         <item itemvalue="Python.Report (1)" />
         <item itemvalue="Python.data_structure" />
-        <item itemvalue="Python.Report" />
       </list>
     </recent_temporary>
   </component>
@@ -291,7 +302,7 @@
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49837133" weight="0.30367506" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49837133" visible="true" weight="0.30327216" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info x="2274" y="92" width="689" height="903" id="Terminal" order="3" sideWeight="0.50162864" side_tool="true" type="FLOATING" weight="0.2460815" />
@@ -307,7 +318,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" x="1401" y="272" width="1080" height="791" id="Run" order="3" type="FLOATING" visible="true" weight="0.32899022" />
+      <window_info active="true" anchor="right" x="1421" y="569" width="1025" height="993" id="Run" order="3" type="FLOATING" visible="true" weight="0.32899022" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49837133" visible="true" weight="0.30367506" />
@@ -380,15 +391,6 @@
         <state showInfoPanel="true" rowLines="3" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source_code_test/Report.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/Report.py" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -401,20 +403,30 @@
     <entry file="file://$PROJECT_DIR$/source/report_card.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/report_card_script.py">
+    <entry file="file://$PROJECT_DIR$/source/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="166">
+          <caret line="122" column="26" lean-forward="true" selection-end-line="147" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#10#20#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/main.py">
+    <entry file="file://$PROJECT_DIR$/source/report_card_script.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="137" column="8" lean-forward="true" selection-start-line="137" selection-start-column="8" selection-end-line="137" selection-end-column="8" />
+        <state relative-caret-position="198">
+          <caret line="11" column="12" lean-forward="true" selection-end-line="146" />
+          <folding>
+            <element signature="e#10#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source_code_test/Report.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
           <folding>
             <element signature="e#10#20#0" expanded="true" />
           </folding>

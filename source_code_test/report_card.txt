@@ -1,0 +1,52 @@
+
+Student_Id:1 	Name:A
+Total Average:69.6%
+
+		 Course:Biology	Teacher:Mr. D
+		 Final Grade:	84.1%
+
+		 Course:History	Teacher: Mrs. P
+		 Final Grade:	51.8%
+
+		 Course:Math	Teacher: Mrs. C
+		 Final Grade:	74.2%
+
+		 Course:Science	Teacher:Mr. Vini
+		 Final Grade:	68.3%
+
+
+Student_Id:2 	Name:B
+Total Average:60.65%
+
+		 Course:Biology	Teacher:Mr. D
+		 Final Grade:	47.1%
+
+		 Course:Math	Teacher: Mrs. C
+		 Final Grade:	74.2%
+
+
+Student_Id:3 	Name:C
+Total Average:66.2%
+
+		 Course:Biology	Teacher:Mr. D
+		 Final Grade:	71.1%
+
+		 Course:History	Teacher: Mrs. P
+		 Final Grade:	51.8%
+
+		 Course:Math	Teacher: Mrs. C
+		 Final Grade:	74.2%
+
+		 Course:Science	Teacher:Mr. Vini
+		 Final Grade:	67.7%
+
+
+Student_Id:4 	Name:D
+Total Average:57.1%
+
+		 Course:Biology	Teacher:Mr. D
+		 Final Grade:	53.2%
+
+		 Course:Science	Teacher:Mr. Vini
+		 Final Grade:	61.0%
+
