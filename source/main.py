@@ -1,43 +1,64 @@
+# modules
 import csv
 import os
-path = os.path.join('/home', 'vini', 'PycharmProjects', 'ReportCard', 'resources/')
+
+
+# os module initializes file path folders from root directory to access csv files data
+path = os.path.abspath('.')
+
+# condition checks OS eg: Linux, OSX
+if path[0] == '/':
+    path = path + os.path.join('/csv_files/')
+
+# Windows OS
+else:
+    path = path + os.path.join('\\csv_files\\')
+
+# total csv_files
 csv_files = ['courses.csv', 'tests.csv', 'marks.csv', 'students.csv']
 
+# initialized variables names holds data from associated csv file
 students = {}
 courses = {}
 course_teachers = {}
-marks_data = []  # marks csv data is assigned
-tests_data = []  # tests csv data is assigned
+marks_data = []
+tests_data = []
 
-
+# loop collect data and assigns it to above associated csv file variable
 for file in csv_files:
 
     with open(path + file, 'r') as csv_file:
         read_csv = csv.reader(csv_file, delimiter=',')
-
         # skipping header in csv file
         next(read_csv, None)
 
-        # loop assigns key course_id and value course_name to course_details dictionary
+        # condition assigns data to courses and course_teacher dictionary
         if file == csv_files[0]:
             for data in read_csv:
                 courses[data[0]] = data[1]
                 course_teachers[data[1]] = data[2]
+
+        # condition assigns data to students dictionary
         elif file == csv_files[3]:
             for data in read_csv:
                 students[data[0]] = data[1]
+
+        # condition assigns data to marks_data list
         elif file == csv_files[2]:
             for data in read_csv:
                 marks_data.append(data)
+
+        # condition assigns data to tests_data list
         elif file == csv_files[1]:
             for data in read_csv:
                 tests_data.append(data)
 
 
-# logic script starts
+# report card script starts
 # loop calculate each student grades and their average dynamically
 for name_id, name in students.items():
 
+    # initialized variables names holds individual student details
     marks = {}
     total_percentage = 0
     total_courses = 0
@@ -52,6 +73,7 @@ for name_id, name in students.items():
     course_id = list(courses.keys())
     for course_name in course_id:
 
+        # verify course weights
         course_weights = {}
         for course_test_id in tests_data:
             if course_name == course_test_id[1]:
@@ -79,16 +101,10 @@ for name_id, name in students.items():
     # calculating student total percentage of marks
     total_percentage = total_percentage / float(total_courses)
 
-    '''
-    # Debugging 
-    print(round(total_percentage, 2))
-    print(final_grade, '\n')
-    print("-----------------------------------------------------------------------")
-    '''
-    # statements writes students report card final grades into test document
+    # statements writes students report card final grades into text document
     text_file = open('report_card.txt', 'a')
     text_file.write('\n')
-    text_file.write(("Student_Id:%s" % name_id) + " Name:%s" % name)
+    text_file.write(("Student_Id:%s" % name_id) + " \tName:%s" % name)
     text_file.write('\n')
     text_file.write("Total Average:%s" % round(total_percentage, 2) + '%')
     text_file.write('\n\n')
@@ -98,13 +114,21 @@ for name_id, name in students.items():
     for c_id, c_teacher in course_teachers.items():
         # condition evaluates null values
         if final_grade[grade] != 0:
-            text_file.write(("\t\t course:%s" % c_id) + "\tTeacher:%s" % c_teacher)
+            text_file.write(("\t\t Course:%s" % c_id) + "\tTeacher:%s" % c_teacher)
             text_file.write('\n')
             text_file.write('\t\t Final Grade:\t%s' % final_grade[grade] + '%')
             text_file.write('\n\n')
         grade += 1
 
-    text_file.write('---------------------------------------------------------------')
+    # text_file.write('---------------------------------------------------------------')
+    text_file.close()
+
+# open report card text file
+
+abs_path = os.path.abspath('.') + '/report_card.txt'
+report_card = open(str(abs_path))
+report = report_card.read()
+print(report)
 
 # THE END OF PYTHON SCRIPT
 
