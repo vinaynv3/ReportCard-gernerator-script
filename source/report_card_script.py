@@ -1,6 +1,7 @@
 import csv
 import os
 
+
 path = os.path.join('/home', 'vini', 'PycharmProjects', 'ReportCard', 'resources/')
 csv_files = ['courses.csv', 'tests.csv', 'marks.csv', 'students.csv']
 

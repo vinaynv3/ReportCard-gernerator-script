@@ -3,15 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e82e9812-3a12-44ee-acab-1f63f33c80d4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/Report.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/data_structure.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/source/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/report_card.txt" beforeDir="false" afterPath="$PROJECT_DIR$/source/report_card.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source_code_test/marks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/source_code_test/marks.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source_code_test/report_card.txt" beforeDir="false" afterPath="$PROJECT_DIR$/source_code_test/report_card.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source_code_test/tests.csv" beforeDir="false" afterPath="$PROJECT_DIR$/source_code_test/tests.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/report_card_script.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/report_card_script.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,7 +19,7 @@
         <entry file="file://$PROJECT_DIR$/source/main.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="436">
-              <caret line="129" column="13" lean-forward="true" selection-start-line="129" selection-start-column="13" selection-end-line="129" selection-end-column="13" />
+              <caret line="137" column="8" lean-forward="true" selection-start-line="137" selection-start-column="8" selection-end-line="137" selection-end-column="8" />
               <folding>
                 <element signature="e#10#20#0" expanded="true" />
               </folding>
@@ -36,8 +30,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/report_card_script.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="113" selection-start-line="113" selection-end-line="113" />
+            <state relative-caret-position="36">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -76,8 +70,8 @@
         <option value="$PROJECT_DIR$/source_code_test/tests.csv" />
         <option value="$PROJECT_DIR$/source_code_test/marks.csv" />
         <option value="$PROJECT_DIR$/source_code_test/report_card.txt" />
-        <option value="$PROJECT_DIR$/source/report_card_script.py" />
         <option value="$PROJECT_DIR$/source/report_card.txt" />
+        <option value="$PROJECT_DIR$/source/report_card_script.py" />
         <option value="$PROJECT_DIR$/source/main.py" />
       </list>
     </option>
@@ -313,7 +307,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" x="1366" y="27" width="1080" height="791" id="Run" order="3" type="FLOATING" visible="true" weight="0.32899022" />
+      <window_info active="true" anchor="right" x="1401" y="272" width="1080" height="791" id="Run" order="3" type="FLOATING" visible="true" weight="0.32899022" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49837133" visible="true" weight="0.30367506" />
@@ -404,23 +398,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/source/report_card.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/source/report_card_script.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="113" selection-start-line="113" selection-end-line="113" />
+        <state relative-caret-position="36">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/report_card.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="436">
-          <caret line="129" column="13" lean-forward="true" selection-start-line="129" selection-start-column="13" selection-end-line="129" selection-end-column="13" />
+          <caret line="137" column="8" lean-forward="true" selection-start-line="137" selection-start-column="8" selection-end-line="137" selection-end-column="8" />
           <folding>
             <element signature="e#10#20#0" expanded="true" />
           </folding>

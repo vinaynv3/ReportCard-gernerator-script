@@ -54,6 +54,9 @@ for file in csv_files:
                 tests_data.append(data)
 
 
+text_file = open('report_card.txt', 'r+')
+text_file.truncate(0)
+
 # report card script starts
 # loop calculate each student grades and their average dynamically
 for name_id, name in students.items():
@@ -102,6 +105,7 @@ for name_id, name in students.items():
     total_percentage = total_percentage / float(total_courses)
 
     # statements writes students report card final grades into text document
+
     text_file = open('report_card.txt', 'a')
     text_file.write('\n')
     text_file.write(("Student_Id:%s" % name_id) + " \tName:%s" % name)
@@ -130,5 +134,14 @@ report_card = open(str(abs_path))
 report = report_card.read()
 print(report)
 
+# opening final report card text document
+# Linux
+if abs_path[0] == '/':
+    osCommandString = "gedit report_card.txt"
+    os.system(osCommandString)
+# Windows
+else:
+    osCommandString = "notepad.exe report_card.txt"
+    os.system(osCommandString)
 # THE END OF PYTHON SCRIPT
 
