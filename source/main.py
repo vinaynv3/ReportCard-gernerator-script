@@ -1,6 +1,5 @@
 import csv
 import os
-
 path = os.path.join('/home', 'vini', 'PycharmProjects', 'ReportCard', 'resources/')
 csv_files = ['courses.csv', 'tests.csv', 'marks.csv', 'students.csv']
 
@@ -48,8 +47,6 @@ for name_id, name in students.items():
     for index in marks_data:
         if name_id == index[1]:
             marks[index[0]] = index[2]
-
-    print('STUDENT', name_id, 'Name: ', name)
 
     # collecting individual student course marks
     course_id = list(courses.keys())
