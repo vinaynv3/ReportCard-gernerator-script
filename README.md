@@ -32,7 +32,7 @@ Open any python supported ide navigate to source folder
 and run report_card_script.py or follow bellow steps
 
  
-####Windows users
+- **Windows users**
 
 
     1. open command prompt 
@@ -40,7 +40,7 @@ and run report_card_script.py or follow bellow steps
     3. select source folder
     4. Type report_card_script.py to see output
 
-####Linux/OSX users
+- **Linux/OSX users**
 
 Note: Linux terminal CASE-SENSITIVE
     
