@@ -1,5 +1,5 @@
 
-# Back-end Assesment
+# Hatchway Back-end Assessment
 
 ----------------------
 Assignment Description
@@ -11,12 +11,17 @@ once the data collected, script iterates each student marks data
 Script can handle inputs of various size and tested fully for scalability
 issues. Dynamically handled approach is implemented in the script to
 support scalability and performance
+
+**Technologies and tools used**
+- scripting language: Python
+- data: CSV files
+- Python modules: os, csv
+- IDE: Pycharm
+- OS: Linux-ubuntu
  
 Finally, All students total grade averages report cards are displayed in text document to
 the order of their student id
   
-    -a - Count frequencies using an AVL tree 
-    -s - Count frequencies using a splay tree 
 
 
 -------------------------

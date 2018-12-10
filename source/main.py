@@ -143,5 +143,6 @@ if abs_path[0] == '/':
 else:
     osCommandString = "notepad.exe report_card.txt"
     os.system(osCommandString)
+
 # THE END OF PYTHON SCRIPT
 
