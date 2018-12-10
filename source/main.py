@@ -1,3 +1,11 @@
+
+'''
+Report card generator script
+Note: this file is for debugging purpose
+TODO: implement linked list for optimization purpose
+'''
+
+
 # modules
 import csv
 import os
