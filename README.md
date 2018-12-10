@@ -12,13 +12,6 @@ Script can handle inputs of various size and tested fully for scalability
 issues. Dynamically handled approach is implemented in the script to
 support scalability and performance
 
-**Technologies and tools used**
-- scripting language: Python
-- data: CSV files
-- Python modules: os, csv
-- IDE: Pycharm
-- OS: Linux-ubuntu
- 
 Finally, All students total grade averages report cards are displayed in text document to
 the order of their student id
   
@@ -32,7 +25,7 @@ Open any python supported ide navigate to source folder
 and run report_card_script.py or follow bellow steps
 
  
-- **Windows users**
+**Windows users**
 
 
     1. open command prompt 
@@ -40,7 +33,7 @@ and run report_card_script.py or follow bellow steps
     3. select source folder
     4. Type report_card_script.py to see output
 
-- **Linux/OSX users**
+**Linux/OSX users**
 
 Note: Linux terminal CASE-SENSITIVE
     
@@ -51,4 +44,11 @@ Note: Linux terminal CASE-SENSITIVE
 
 
 
+**Technologies and tools used**
+- scripting language: Python
+- data: CSV files
+- Python modules: os, csv
+- IDE: Pycharm
+- OS: Linux-ubuntu
+ 
 source code: https://github.com/vinaynv3/ReportCard-gernerator-script
