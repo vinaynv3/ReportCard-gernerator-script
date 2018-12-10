@@ -35,7 +35,7 @@ and run report_card_script.py or follow bellow steps
 
 **Linux/OSX users**
 
-Note: Linux terminal CASE-SENSITIVE
+Note: Linux terminal is CASE-SENSITIVE
     
     1. Open Terminal
     2. Navigate to ReportCard directory
