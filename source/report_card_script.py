@@ -2,6 +2,8 @@
 import csv
 import os
 
+# PYTHON SCRIPT STARTS
+
 # os module initializes file path folders from root directory to access csv files data
 path = os.path.abspath('.')
 

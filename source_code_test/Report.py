@@ -52,7 +52,7 @@ for file in csv_files:
             for data in read_csv:
                 tests_data.append(data)
 
-
+# clears text file data
 text_file = open('report_card.txt', 'r+')
 text_file.truncate(0)
 
